@@ -11,9 +11,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicon/mom-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="animate.min.css">
+    <!-- <link rel="stylesheet" href="animate.min.css"> -->
 
     <link rel="stylesheet" href="public/build/tailwind.css">
+
+    <script src="js/parallax.js"></script>
 </head>
 
 
@@ -28,22 +30,20 @@
             <div class="container mx-auto px-6">
                 <div class="flex items-center justify-between">
                     <div class="ml-0 md:-ml-6">
-                        <a href="#"
-                            class="text-xl sm:text-3xl font-bold text-greenMOM no-underline tracking-wider animated fadeIn slow">
+                        <a href="#" class="text-xl sm:text-3xl font-bold text-greenMOM no-underline tracking-wider animated fadeIn slow">
                             Traspoti MOM
                         </a>
                     </div>
                     <div class="flex items-center mr-0 md:-mr-10">
 
                         <a class="mr-6 animated fadeIn delay-100ms" href="#">
-                            <button
-                                class="no-underline text-base font-semibold bg-white text-greenMOM rounded-full px-3 py-2 tracking-widest focus:outline-none hover:bg-greenMOM hover:text-white">
+                            <button class="no-underline text-base font-semibold bg-white text-greenMOM rounded-full px-3 py-2 tracking-widest focus:outline-none hover:bg-greenMOM hover:text-white">
                                 Login 
                             </button>
                         </a>
 
                         <a class="animated fadeIn delay-100ms" href="#">
-                                    <button class=" no-underline text-base font-semibold bg-white text-greenMOM
+                            <button class=" no-underline text-base font-semibold bg-white text-greenMOM
                                                     rounded-full px-3 py-2 tracking-widest focus:outline-none hover:bg-greenMOM hover:text-white"> Registrati </button>
                         </a>
 
@@ -60,8 +60,8 @@
         <div class="container mx-auto flex flex-col sm:flex-row flex-1 items-center">
 
             <!--Left Col-->
-            <div class="flex flex-col w-full xl:w-2/5 justify-around h-full">
-                <div class="leading-tight text-center">
+            <div id="scene1" class="flex flex-col w-full xl:w-2/5 justify-around h-full">
+                <div data-depth="0.2" class="leading-tight text-center">
                     <h1 class="w-4/5 mx-auto sm:w-full text-greenMOM font-bold tracking-wide text-3xl sm:text-5xl mb-6 animated fadeIn md:fadeInUpBig">
                         Gestione Sanzioni Trasporti MOM
                     </h1>
@@ -74,9 +74,14 @@
             </div>
 
             <!--Right Col-->
-            <div class="w-full xl:w-3/5 overflow-y-hidden">
-                <img class="w-4/6 mx-auto animated zoomIn delay-0 md:delay-800ms" src="public/assets/images/bus-stop-2.svg">
+            <div id="scene2" class="w-full xl:w-3/5 overflow-y-hidden">
+                <img data-depth="0.3" class="w-4/6 mx-auto animated zoomIn delay-0 md:delay-800ms" src="public/assets/images/bus-stop-2.svg">
             </div>
+
+            <!-- <div id="scene">
+                <div data-depth="0.2">My first Layer!</div>
+                <div data-depth="0.6">My second Layer!</div>
+            </div> -->
 
 
         </div>
@@ -85,13 +90,16 @@
 
         <!--Footer-->
         <div class="w-full pt-16 pb-6 text-sm text-center">
-            <a class="text-gray-500 no-underline hover:no-underline mr-8 hover:text-greenMOM animated zoomIn slower"
-                href="https://www.provincia.treviso.it/" target="_blank"> &copy; Provincia di Treviso </a>
-            <a class="text-gray-500 no-underline hover:no-underline hover:text-greenMOM animated zoomIn slower"
-                href="https://mobilitadimarca.it/" target="_blank"> MOM - Mobilità di Marca </a>
+            <a class="text-gray-500 no-underline hover:no-underline mr-8 hover:text-greenMOM animated zoomIn slower" href="https://www.provincia.treviso.it/" target="_blank"> &copy; Provincia di Treviso </a>
+            <a class="text-gray-500 no-underline hover:no-underline hover:text-greenMOM animated zoomIn slower" href="https://mobilitadimarca.it/" target="_blank"> MOM - Mobilità di Marca </a>
         </div>
 
+
+
     </div>
+
+
+    <script src="/js/instance.js"></script>
 
 </body>
 
