@@ -93,7 +93,15 @@
     </div>
 
     <script src="js/parallax.js" type="text/javascript"></script>
-    <script src="/js/instance.js" type="text/javascript"></script>
+    <!-- <script src="/js/instance.js" type="text/javascript"></script> -->
+
+    <script type="text/javascript">
+        var scene = document.getElementById('scene1');
+        var parallaxInstance = new Parallax(scene);
+
+        var scene = document.getElementById('scene2');
+        var parallaxInstance = new Parallax(scene);
+    </script>
 
 </body>
 
